@@ -17,6 +17,22 @@ function Linkedin({ size = 15 }) {
   );
 }
 
+function Twitter({ size = 15 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M18.9 2H22l-7.4 8.46L23.3 22h-6.8l-5.32-6.96L5.1 22H2l7.9-9.03L1 2h6.96l4.8 6.36L18.9 2Zm-1.2 18h1.87L7.4 3.9H5.4L17.7 20Z" />
+    </svg>
+  );
+}
+
+function Medium({ size = 15 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12ZM21.24 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.87 3.38 6.42ZM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12Z" />
+    </svg>
+  );
+}
+
 const colors = {
   bg: "#0A0D12",
   bgPanel: "#11151C",
@@ -580,6 +596,24 @@ export default function Portfolio() {
             style={{ border: `1px solid ${colors.borderBright}`, color: colors.textPrimary, fontSize: 13 }}
           >
             <Linkedin size={15} /> LINKEDIN
+          </a>
+          <a
+            href="https://twitter.com/Codaksmade"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-5 py-3 rounded-sm font-mono"
+            style={{ border: `1px solid ${colors.borderBright}`, color: colors.textPrimary, fontSize: 13 }}
+          >
+            <Twitter size={15} /> TWITTER
+          </a>
+          <a
+            href="https://medium.com/@Codaks"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-5 py-3 rounded-sm font-mono"
+            style={{ border: `1px solid ${colors.borderBright}`, color: colors.textPrimary, fontSize: 13 }}
+          >
+            <Medium size={15} /> MEDIUM
           </a>
         </div>
         <p className="font-mono mt-16" style={{ fontSize: 11.5, color: colors.textTertiary }}>
